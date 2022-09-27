@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, 'sans-serif';
+}
+
+.content {
+   display: flex;
+   flex: row;
+   position: relative;
+
+   width: 100vw;
+   min-height: 100vh;
+}
+
+.left {
+    width: 35vw;
+    background-image: url(plant.jpeg);
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.bannerTitle {
+    font-family: Norse-Bold;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 1vh;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    width: 35%;
+}
+
+.footerText {
+    max-width: 200px;
+}
+
+.right {
+    width: 65vw;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top {
+    padding-left: 5%;
+    padding-right: 20%;
+    padding-bottom: 40px;
+    font-weight: bold;
+    box-shadow: 0 1px 1px #f8f9fa;
+}
+
+.middle {
+    padding-top: 12px;
+    padding-left: 5%;
+    background-color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 2px 3px #dcddde;
+}
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+.bottom {
+    padding-left: 5%;
+    padding-right: 20%;
+    font-size: 12px;
+}
+
+.bottom button {
+    background-color: #596D48;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 1px 2px 2px  #a0aa99;
+}
+
+.bottom button:hover {
+    background-color: white;
+    color: #596D48;
+}
