@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="content">
@@ -29,35 +30,35 @@
             </div>
             <div class="middle">
                 Let's do this!
-                <div class="form">
+                <form action="#" method="post" id="form">
                     <div class="input">
                         <label for="first-name">First name</label>
-                        <input type="text" name="first-name" id="first-name" required="">
+                        <input type="text" name="first-name" id="first-name" placeholder="John" pattern="^([a-ZA-Z]+)$" required>
                     </div>
                     <div class="input">
                         <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" placeholder="Smith" pattern="^([a-ZA-Z]+)$" required>
                     </div>
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required="">
+                        <input type="email" name="email" id="email" placeholder="jsmith@odin.com" pattern="^([\w\.-_]+)@([\w-]+)\.([a-zA-Z]{2,5})([\.][a-zA-Z]{2,5})?$" required>
                     </div>
                     <div class="input">
                         <label for="phone-number">Phone number</label>
-                        <input type="text" name="phone-number" id="phone-number" minlength="10" maxlength="10">
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-789" pattern="^([\d]{3})[\-]?([\d]{3})[\-]?([\d]{4})$">
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="passwor" required="">
+                        <input type="password" name="password" id="password" placeholder="********" required>
                     </div>
                     <div class="input">
-                        <label for="confirm-password">Confirm password</label>
-                        <input type="password" name="confirm-password"  id="confirm-password" required="">
+                        <label for="confirmpassword">Confirm password</label>
+                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="********" required>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="bottom">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="form">Create Account</button>
 
                 <div> Already have an account? <a href=""> Log in</a></div>
             </div>

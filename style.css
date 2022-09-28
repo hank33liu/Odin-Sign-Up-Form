@@ -32,7 +32,8 @@
 .banner {
     background-color: rgba(0, 0, 0, 0.7);
     position: relative;
-    top: 20vh;
+    top: 25vh;
+    padding: 20px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -40,13 +41,13 @@
 }
 
 .logo {
-    height: 10vh;
+    height: 13vh;
 }
 
 .bannerTitle {
     font-family: Norse-Bold;
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
 .footer {
@@ -93,7 +94,7 @@
     box-shadow: 0 2px 3px #dcddde;
 }
 
-.form{
+#form {
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
@@ -109,9 +110,20 @@
     text-transform: uppercase;
 }
 
-.input:focus {
-    border: 1px solid blue;
-    box-shadow: box-shadow: 1px 2px 1px #a0aa99;
+input:focus {
+    border: 2px solid lightblue;
+    box-shadow: 0px 2px 1px #a0aa99;
+    outline: none;
+}
+
+input:valid {
+    border: 2px solid green;
+    outline: none;
+}
+
+input invalid .password {
+    border: 2px solid red;
+    outline: none;
 }
 
 .bottom {
