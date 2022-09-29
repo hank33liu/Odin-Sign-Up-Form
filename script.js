@@ -1,5 +1,3 @@
-console.log('script started')
-
 // Validating passwords meet requirements and also match
 const password = document.getElementById("password");
 const confirmpassword = document.getElementById("confirmpassword");
@@ -31,5 +29,3 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confirmpassword.onkeyup = validatePassword;
-
-console.log('script finished')
