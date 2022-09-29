@@ -1,17 +1,35 @@
+console.log('script started')
+
 // Validating passwords meet requirements and also match
-const password = document.getElementById("password")
-const confirm_password = document.getElementById("confirm-password")
+const password = document.getElementById("password");
+const confirmpassword = document.getElementById("confirmpassword");
+const inputs = document.querySelectorAll("input")
 
-function validatePassword(){
-    if (password.value != confirm_password.value) {
-        password.title = "test"
-        confirm_password.title = "test"
-    } else {
-        pass
+
+function removeUnfilled (){
+    if (this.value.length > 0) {
+        this.className = "";
     }
-
 }
 
-console.log('script loaded')
+for (let i=0; i < inputs.length; i++) {
+    inputs[i].addEventListener("keyup", removeUnfilled)
+}
+
+function validatePassword(){
+    if (password.value != confirmpassword.value) {
+        password.setCustomValidity("Passwords must match.");
+        password.title = "Passwords must match.";
+        confirmpassword.setCustomValidity("Passwords must match.");
+        confirmpassword.title = "Passwords must match.";
+    } else {
+        password.setCustomValidity("");
+        confirmpassword.setCustomValidity("");
+    }
+}
+
+
 password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+confirmpassword.onkeyup = validatePassword;
+
+console.log('script finished')
